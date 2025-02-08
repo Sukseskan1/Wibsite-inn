@@ -252,6 +252,64 @@ body {
 .portofolio .row .portofolio-card .portofolio-card-title {
   margin: 1rem auto 0.5rem;
 }
+/* harga section */
+.harga-per-m2-info {
+  padding: 7rem 7% 1.4rem;
+}
+
+.harga h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.harga span {
+  color: var(--primary);
+}
+.harga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.harga-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 1em;
+  text-align: center;
+  max-width: 900px; /* Batasi lebar agar tetap center */
+  margin: 0 auto; /* Pusatkan grid */
+}
+
+.harga-item {
+  padding: 10px;
+  text-align: center;
+}
+
+.harga-item h3 {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Saat layar lebih kecil dari 768px (HP), ubah jadi 3 kolom */
+@media (max-width: 768px) {
+  .harga-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di HP */
+  }
+}
+
+/* Saat layar sangat kecil (<480px), ubah jadi 1 kolom */
+@media (max-width: 480px) {
+  .harga-grid {
+    grid-template-columns: 1fr; /* 1 kolom di layar kecil */
+  }
+}
 
 /* Contact section */
 
