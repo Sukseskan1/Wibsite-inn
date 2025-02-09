@@ -33,6 +33,7 @@
         <a href="#about">Tentang Kami</a>
         <a href="#portofolio">Portofolio</a>
         <a href="#harga">harga per m2</a>
+        <a href="#Ded">contoh gambar kerja</a>
         <a href="#contact">Kontak</a>
       </div>
 
@@ -223,6 +224,26 @@
     </section>
     <!-- Portofolio section end -->
 
+    <style>
+      .portofolio {
+        margin-top: 10px; /* Adjust this value to match the height of your navbar */
+      }
+    </style>
+
+    <script>
+      document
+        .querySelector('.navbar-nav a[href="#portofolio"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          const portofolioSection = document.querySelector("#portofolio");
+          const navbarHeight = document.querySelector(".navbar").offsetHeight;
+          window.scrollTo({
+            top: portofolioSection.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        });
+    </script>
+
     <!-- Harga section start -->
     <section id="harga" class="harga">
       <h2><span>Harga</span> per m2</h2>
@@ -232,7 +253,7 @@
       </p>
       <div class="harga-grid">
         <div class="harga-item">
-          <h3>Paket Rp 18,000 / m²</h3>
+          <h3>Paket Rp 25,000 / m²</h3>
           <ul>
             <li>Denah</li>
             <li>Tampak</li>
@@ -240,7 +261,7 @@
           </ul>
         </div>
         <div class="harga-item">
-          <h3>Paket Rp 30,000 / m²</h3>
+          <h3>Paket Rp 35,000 / m²</h3>
           <ul>
             <li>Denah</li>
             <li>Tampak</li>
@@ -249,7 +270,7 @@
           </ul>
         </div>
         <div class="harga-item">
-          <h3>Paket Rp 40,000 / m²</h3>
+          <h3>Paket Rp 45,000 / m²</h3>
           <ul>
             <li>Denah</li>
             <li>Tampak</li>
@@ -259,7 +280,7 @@
           </ul>
         </div>
         <div class="harga-item">
-          <h3>Paket Rp 65,000 / m²</h3>
+          <h3>Paket Rp 75,000 / m²</h3>
           <ul>
             <li>Denah</li>
             <li>Tampak</li>
@@ -282,6 +303,69 @@
         </div>
       </div>
     </section>
+    <!-- Ded section start -->
+    <section id="Ded" class="Ded">
+      <h2><span>contoh </span> gambar kerja</h2>
+      <p style="text-align: center"></p>
+      <p style="text-align: center">
+        ini adalah contoh gambar kerja untuk berbagai layanan kami:
+      </p>
+      <div class="row">
+        <div class="Ded">
+          <a href="https://wa.me/62895616282500" target="_blank" onclick="alert('Silakan hubungi kami di WhatsApp untuk mendapatkan akses download.')">
+        <img
+          src="img/ded/tampak depan rumah lt.2.jpg"
+          alt="Gambar Rumah tinggal lt.2"
+          class="Ded-card-img"
+        />
+          </a>
+          <h3 class="Ded">- Rumah tinggal lt.2 -</h3>
+        </div>
+
+        <div class="Ded">
+          <a href="https://wa.me/62895616282500" target="_blank" onclick="alert('Silakan hubungi kami di WhatsApp untuk mendapatkan akses download.')">
+        <img
+          src="img/ded/gudang.jpg"
+          alt="Gambar GUDANG"
+          class="Ded-card-img"
+        />
+          </a>
+          <h3 class="Ded">- Gambar GUDANG -</h3>
+        </div>
+
+        <div class="Ded">
+          <a href="https://wa.me/62895616282500" target="_blank" onclick="alert('Silakan hubungi kami di WhatsApp untuk mendapatkan akses download.')">
+        <img
+          src="img/ded/gor batminton.jpg"
+          alt="Gambar GOR "
+          class="Ded-card-img"
+        />
+          </a>
+          <h3 class="Ded">- Gambar GOR -</h3>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <style>
+      .Ded {
+        margin-top: 40px; /* Adjust this value to match the height of your navbar */
+      }
+    </style>
+
+    <script>
+      document
+        .querySelector('.navbar-nav a[href="#Ded"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          const dedSection = document.querySelector("#Ded");
+          const navbarHeight = document.querySelector(".navbar").offsetHeight;
+          window.scrollTo({
+            top: dedSection.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        });
+    </script>
 
     <style>
       .harga-grid {
