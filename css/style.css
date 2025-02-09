@@ -310,6 +310,22 @@ body {
     grid-template-columns: 1fr; /* 1 kolom di layar kecil */
   }
 }
+/* Ded section */
+.contoh-gambar-kerja-info {
+  padding: 10rem 7% 1.4rem;
+}
+
+.Ded h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.Ded span {
+  color: var(--primary);
+}
+
 
 /* Contact section */
 
